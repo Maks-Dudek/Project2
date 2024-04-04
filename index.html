@@ -32,6 +32,9 @@
     .citybuttons button:hover {
       background-color: #916CB2; /* Hover color */
     }
+    .citynames {
+      font-size: 14px;
+    }
     .event-calendar {
       float: right;
       width: 300px;
@@ -92,86 +95,84 @@
 </div>
 <div id="citybar">
   <div class="citybuttons">
-    <button onclick="changeCity('chc')">CHC</button>
-    <button onclick="changeCity('nch')">NCH</button>
-    <button onclick="changeCity('wcl')">WCL</button>
-    <button onclick="changeCity('sox')">SOX</button>
-    <button onclick="changeCity('nwi')">NWI</button>
-    <button onclick="changeCity('nwc')">NWC</button>
+    <button onclick="changeCity('chc')">CHC</button><span id="chc" class="citynames"></span>
+    <button onclick="changeCity('nch')">NCH</button><span id="nch" class="citynames"></span>
+    <button onclick="changeCity('wcl')">WCL</button><span id="wcl" class="citynames"></span>
+    <button onclick="changeCity('sox')">SOX</button><span id="sox" class="citynames"></span>
+    <button onclick="changeCity('nwi')">NWI</button><span id="nwi" class="citynames"></span>
+    <button onclick="changeCity('nwc')">NWC</button><span id="nwc" class="citynames"></span>
   </div>
 </div>
 <div id="bottombar">
   <p>&copy; 2024 Craigslist | <a href="#">Help</a> <a href="#">Safety</a> <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">About</
     <a href="#">App</a> <a href="#">Sitemap</a></p>
+</div>
+
+<!-- Event Calendar -->
+<div class="event-calendar">
+  <div class="calendar-header">
+    <h2>April 2024</h2>
   </div>
-  
-  <!-- Event Calendar -->
-  <div class="event-calendar">
-    <div class="calendar-header">
-      <h2>April 2024</h2>
+  <div class="calendar-body">
+    <div class="calendar-row">
+      <div class="calendar-day">Sun</div>
+      <div class="calendar-day">Mon</div>
+      <div class="calendar-day">Tue</div>
+      <div class="calendar-day">Wed</div>
+      <div class="calendar-day">Thu</div>
+      <div class="calendar-day">Fri</div>
+      <div class="calendar-day">Sat</div>
     </div>
-    <div class="calendar-body">
-      <div class="calendar-row">
-        <div class="calendar-day">Sun</div>
-        <div class="calendar-day">Mon</div>
-        <div class="calendar-day">Tue</div>
-        <div class="calendar-day">Wed</div>
-        <div class="calendar-day">Thu</div>
-        <div class="calendar-day">Fri</div>
-        <div class="calendar-day">Sat</div>
-      </div>
-      <!-- Example content, replace with actual calendar content -->
-      <div class="calendar-row">
-        <div class="calendar-day">-</div>
-        <div class="calendar-day">-</div>
-        <div class="calendar-day">1</div>
-        <div class="calendar-day">2</div>
-        <div class="calendar-day">3</div>
-        <div class="calendar-day">4</div>
-        <div class="calendar-day">5</div>
-      </div>
-      <div class="calendar-row">
-        <div class="calendar-day">6</div>
-        <div class="calendar-day">7</div>
-        <div class="calendar-day">8</div>
-        <div class="calendar-day">9</div>
-        <div class="calendar-day">10</div>
-        <div class="calendar-day">11</div>
-        <div class="calendar-day">12</div>
-      </div>
-      <!-- Add more rows as needed -->
+    <!-- Example content, replace with actual calendar content -->
+    <div class="calendar-row">
+      <div class="calendar-day">-</div>
+      <div class="calendar-day">-</div>
+      <div class="calendar-day">1</div>
+      <div class="calendar-day">2</div>
+      <div class="calendar-day">3</div>
+      <div class="calendar-day">4</div>
+      <div class="calendar-day">5</div>
     </div>
+    <div class="calendar-row">
+      <div class="calendar-day">6</div>
+      <div class="calendar-day">7</div>
+      <div class="calendar-day">8</div>
+      <div class="calendar-day">9</div>
+      <div class="calendar-day">10</div>
+      <div class="calendar-day">11</div>
+      <div class="calendar-day">12</div>
+    </div>
+    <!-- Add more rows as needed -->
   </div>
-  
-  <script>
-    function changeCity(cityCode) {
-      var cityNameElement = document.getElementById('cityname');
-      switch(cityCode) {
-        case 'chc':
-          cityNameElement.textContent = 'Chicago';
-          break;
-        case 'nch':
-          cityNameElement.textContent = 'North Chicagoland';
-          break;
-        case 'wcl':
-          cityNameElement.textContent = 'West Chicagoland';
-          break;
-        case 'sox':
-          cityNameElement.textContent = 'South Chicagoland';
-          break;
-        case 'nwi':
-          cityNameElement.textContent = 'Northwest Indiana';
-          break;
-        case 'nwc':
-          cityNameElement.textContent = 'Northwest Suburbs';
-          break;
-        default:
-          break;
-      }
+</div>
+
+<script>
+  function changeCity(cityCode) {
+    var cityNameElement = document.getElementById(cityCode);
+    switch(cityCode) {
+      case 'chc':
+        cityNameElement.textContent = 'Chicago';
+        break;
+      case 'nch':
+        cityNameElement.textContent = 'North Chicagoland';
+        break;
+      case 'wcl':
+        cityNameElement.textContent = 'West Chicagoland';
+        break;
+      case 'sox':
+        cityNameElement.textContent = 'South Chicagoland';
+        break;
+      case 'nwi':
+        cityNameElement.textContent = 'Northwest Indiana';
+        break;
+      case 'nwc':
+        cityNameElement.textContent = 'Northwest Suburbs';
+        break;
+      default:
+        break;
     }
-  </script>
-  </body>
-  </html>
-
-
+  }
+</script>
+</body>
+</html>
 
