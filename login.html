@@ -37,5 +37,23 @@
       <a href="#">Account</a>
     </div>
   </div>
+  </div>
+  <div id="mainbody">  
+  <form id="login" method="post" autocomplete="on" action="#null">
+    <h1 id="f1head">Login</h1>
+    <fieldset id="formcontainer">
+      <div id="emailcontainer">
+        <label>Email Address: <input class="forminput" id="emaill" required name="email" type="email" placeholder="jsmith@gmail.com" onchange="changeEmailLabelColor();">
+        </label>
+      </div>
+      <div id="passwordcontainer">
+        <label>Password: <input class="forminput" id="passl" required name="text" type="text" placeholder="password" onchange="changePassLabelColor();">
+        </label>
+      </div>
+      <div id="button">
+        <button type="submit" onclick="submitForm();">Login</button>
+      </div>
+    </fieldset>
+  </form> 
 </body>
 </html>
