@@ -15,12 +15,12 @@ body {
   font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
 }
 
-.navigation {
+.navigation, #citybar {
   background-color: #551A8B;
   overflow: hidden;
 }
 
-.navigation a {
+.navigation a, #citybar button {
   float: left;
   display: block;
   color: #FFFFFF;
@@ -174,7 +174,7 @@ body {
   font-weight: bold;  
   position: relative;
   width: 75%;
- }
+}
 
 #emailcontainer2 {
   position: relative;
