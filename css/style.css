@@ -1,0 +1,202 @@
+#companylogo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+body {
+  font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
+}
+
+.navigation {
+  background-color: #551A8B;
+  overflow: hidden;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navigation input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 12px;
+  font-size: 1em;
+  max-width: 30%;
+}
+
+.dropmenu {
+  float: left;
+  overflow: hidden;
+}
+
+.dropmenu .dropbutton {
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.droplist {
+  display: none;
+  position: absolute;
+  background-color: #DFD7E6;
+  min-width: 15%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.droplist a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navigation a:hover, .dropmenu:hover .dropbutton {
+  background-color: #916CB2;
+  color: white;
+}
+
+.droplist a:hover {
+  background-color: #916CB2;
+  color: black;
+}
+
+.dropmenu:hover .droplist {
+  display: block;
+}
+
+#righttop a {
+  float: right;	
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  padding-top: 22px;
+}
+
+#mainbody{
+  text-align: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+#formcontainer {
+  background: rgba(223, 215, 230, .4);
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
+  width: 80%;
+  left: 8%;
+}
+
+#login form fieldset {
+  position: relative;
+}
+
+#f1head h1{
+  font-size: 4em;
+  font-weight: bold;  
+}
+
+#emailcontainer {
+  position: relative;
+  clear: both;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#passwordcontainer {
+  position: relative;
+  clear: both;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#button button {
+  font-size: 1.0em;
+  line-height: 1.4em;
+  width: 97%;
+  margin-bottom: 5%;
+}
+
+.forminput {
+  box-sizing: border-box;	
+  width: 97%;
+  padding: 1% 1%;
+  margin: 1% 1.5%;
+}
+
+#button2 button {
+  font-size: 1.0em;
+  line-height: 1.4em;
+  width: 97%;
+  margin-bottom: 5%;
+}
+
+#formcontainer2 {
+  background: rgba(223, 215, 230, .4);
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
+  width: 80%;
+  left: 8%;
+}
+
+#signup form fieldset {
+  position: relative;
+}
+
+#f2head h1{
+  display: inline-block;
+  font-size: 10em;
+  font-weight: bold;  
+  position: relative;
+  width: 75%;
+ }
+
+#emailcontainer2 {
+  position: relative;
+  clear: both;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#spacer {
+  margin-top: 10%;
+  margin-bottom: 10%;  
+}
+
+#spacer2 {
+  margin-top: 10%;
+  margin-bottom: 10%;  
+}
+
+#bottombar {
+  background-color: #B4B8BB;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;	
+}
+
