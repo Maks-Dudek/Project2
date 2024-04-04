@@ -10,6 +10,7 @@ img {
   height: auto;
   width: auto\9;
 }
+
 body {
   font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
 }
@@ -87,13 +88,13 @@ body {
 }
 
 #righttop a {
-  float: right;	
+  float: right;  
   font-size: 1.2em;
   padding-bottom: 20px;
   padding-top: 22px;
 }
 
-#mainbody{
+#mainbody {
   text-align: center;
   position: relative;
   margin-top: 5%;
@@ -113,7 +114,7 @@ body {
   position: relative;
 }
 
-#f1head h1{
+#f1head h1 {
   font-size: 4em;
   font-weight: bold;  
 }
@@ -140,7 +141,7 @@ body {
 }
 
 .forminput {
-  box-sizing: border-box;	
+  box-sizing: border-box;  
   width: 97%;
   padding: 1% 1%;
   margin: 1% 1.5%;
@@ -167,7 +168,7 @@ body {
   position: relative;
 }
 
-#f2head h1{
+#f2head h1 {
   display: inline-block;
   font-size: 10em;
   font-weight: bold;  
@@ -197,6 +198,33 @@ body {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;	
+  width: 100%;  
 }
 
+/* Event Calendar Styles */
+.calendar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.calendar-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-row {
+  display: flex;
+}
+
+.calendar-day {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
