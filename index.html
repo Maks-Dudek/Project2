@@ -37,14 +37,53 @@
       <a href="#">Account</a>
     </div>
   </div>
-  </div>
   <div id="mainbody"> 
     <p>Welcome to Craigslist!</p>
     <p>Craigslist is a classified advertisements website with sections devoted to jobs, housing, personals, for sale, items wanted, services, community, gigs, résumés, and discussion forums.</p>
     <p>Founded in 1995 by Craig Newmark, Craigslist has grown to become one of the most popular websites for classified listings, with millions of users posting and browsing listings every day.</p>
   </div>
+  <div id="citybar">
+    <div class="citynames">
+      <p id="cityname">Chicago</p>
+    </div>
+    <div class="citybuttons">
+      <button onclick="changeCity('chc')">CHC</button>
+      <button onclick="changeCity('nch')">NCH</button>
+      <button onclick="changeCity('wcl')">WCL</button>
+      <button onclick="changeCity('sox')">SOX</button>
+      <button onclick="changeCity('nwi')">NWI</button>
+      <button onclick="changeCity('nwc')">NWC</button>
+    </div>
+  </div>
   <div id="bottombar">
     <p>Legal Information</p>
   </div>
+  <script>
+    function changeCity(cityCode) {
+      var cityNameElement = document.getElementById('cityname');
+      switch(cityCode) {
+        case 'chc':
+          cityNameElement.textContent = 'Chicago';
+          break;
+        case 'nch':
+          cityNameElement.textContent = 'North Chicagoland';
+          break;
+        case 'wcl':
+          cityNameElement.textContent = 'West Chicagoland';
+          break;
+        case 'sox':
+          cityNameElement.textContent = 'South Chicagoland';
+          break;
+        case 'nwi':
+          cityNameElement.textContent = 'Northwest Indiana';
+          break;
+        case 'nwc':
+          cityNameElement.textContent = 'Northwest Suburbs';
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
 </body>
 </html>
