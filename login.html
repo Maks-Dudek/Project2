@@ -10,14 +10,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
+  <script src="js/scripts.js" async></script>
 </head>
 <body>
 <div id="companylogo">
-  <img id="logo" src="images/logo2.jpg">
+  <img id="logo" src="images/logo2.jpg" alt="Craigslist logo">
 </div>
   <div class="navigation" id="bar">
     <div class="dropmenu">
-      <button class="dropbutton">Menu<i class="fa fa-caret-down"></i></button>
+      <button class="dropbutton">Menu<i></i></button>
     <div class="droplist">
       <a href="index.html">Home</a>
       <a href="#">Community</a>
@@ -37,7 +38,6 @@
       <a href="#">Account</a>
     </div>
   </div>
-  </div>
   <div id="mainbody">  
   <form id="login" method="post" autocomplete="on" action="#null">
     <h1 id="f1head">Login</h1>
@@ -51,7 +51,7 @@
         </label>
       </div>
       <div id="button">
-        <button type="submit" onclick="submitForm();">Login</button>
+        <button type="submit" onclick="login();">Login</button>
       </div>
     </fieldset>
   </form>
@@ -64,7 +64,7 @@
 	    </label>
       </div>
 	  <div id="button2">
-        <button type="submit" onclick="submitForm2();">Shop Now</button>
+        <button type="submit" onclick="signup();">Shop Now</button>
       </div>
     </fieldset>
   </form>

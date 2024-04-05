@@ -118,6 +118,7 @@ img {
   font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
   width: 80%;
   left: 8%;
+  margin-top: 1%;
 }
 
 #login form fieldset, #signup form fieldset {
@@ -154,7 +155,6 @@ img {
   display: inline-block;
   font-size: 10em;
   font-weight: bold;  
-  position: relative;
   width: 75%;
 }
 
