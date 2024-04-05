@@ -225,7 +225,7 @@ body {
     width: 70%;
 	margin-top: 1%;
   }
-
+}
 @media screen and (min-width: 1600px) {
 
    #formcontainer {
@@ -239,5 +239,4 @@ body {
     width: 50%;
 	margin-top: 1%;
   }
-  
 }
