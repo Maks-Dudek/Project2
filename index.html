@@ -1,175 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" class="hasjs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Login</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css">
-  <link rel="stylesheet" media="screen" href="css/style.css">
-  <style>
-    /* Added CSS for centering content in the citybar and bottombar */
-    #citybar, #bottombar {
-      text-align: center;
-      background-color: #551A8B; /* Match the navigation bar color */
-      color: #FFFFFF; /* Text color */
-    }
-    .citybuttons {
-      display: inline-block;
-    }
-    .citybuttons button {
-      background-color: transparent;
-      color: inherit;
-      border: none;
-      cursor: pointer;
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 0 5px;
-    }
-    .citybuttons button:hover {
-      background-color: #916CB2; /* Hover color */
-    }
-    .event-calendar {
-      float: right;
-      width: 300px;
-      margin-right: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: Arial, sans-serif;
-    }
-    .calendar-header {
-      background-color: #f0f0f0;
-      padding: 10px;
-      text-align: center;
-    }
-    .calendar-body {
-      padding: 10px;
-    }
-    .calendar-row {
-      display: flex;
-    }
-    .calendar-day {
-      flex: 1;
-      text-align: center;
-      padding: 5px;
-      border: 1px solid #ccc;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
-<div id="companylogo">
-  <img id="logo" src="images/logo2.jpg">
-</div>
-<div class="navigation" id="bar">
-  <div class="dropmenu">
-    <button class="dropbutton">Menu<i class="fa fa-caret-down"></i></button>
-    <div class="droplist">
-      <a href="#">Home</a>
-      <a href="#">Community</a>
-      <a href="#">Housing</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="#">Services</a>
-      <a href="#">For Sale</a>
-      <a href="#">Forums</a>
-      <a href="#">Gigs</a>
-      <a href="#">Resumes</a>
-      <a href="login.html">Login</a>
+    <div id="companylogo">
+        <img id="logo" src="images/logo2.jpg">
     </div>
-  </div>
-  <input id="searchbar" required name="text" type="text" placeholder="search">
-  <div id="righttop">
-    <a href="#">Post</a>
-    <a href="#">Account</a>
-  </div>
-</div>
-<div id="mainbody"> 
-  <p>Welcome to Craigslist!</p>
-  <p>Craigslist is a classified advertisements website with sections devoted to jobs, housing, personals, for sale, items wanted, services, community, gigs, résumés, and discussion forums.</p>
-  <p>Founded in 1995 by Craig Newmark, Craigslist has grown to become one of the most popular websites for classified listings, with millions of users posting and browsing listings every day.</p>
-</div>
-<div id="citybar">
-  <div class="citybuttons">
-    <button onclick="changeCity('chc')">CHC</button>
-    <button onclick="changeCity('nch')">NCH</button>
-    <button onclick="changeCity('wcl')">WCL</button>
-    <button onclick="changeCity('sox')">SOX</button>
-    <button onclick="changeCity('nwi')">NWI</button>
-    <button onclick="changeCity('nwc')">NWC</button>
-  </div>
-  <div id="cityname"></div> <!-- This will display the city name -->
-</div>
-<div id="bottombar">
-  <p>&copy; 2024 Craigslist | <a href="#">Help</a> <a href="#">Safety</a> <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">About</
-    <a href="#">App</a> <a href="#">Sitemap</a></p>
-</div>
-  
-  <!-- Event Calendar -->
-  <div class="event-calendar">
-    <div class="calendar-header">
-      <h2>April 2024</h2>
+    <div class="navigation" id="bar">
+        <div class="dropmenu">
+            <button class="dropbutton">Menu<i class="fa fa-caret-down"></i></button>
+            <div class="droplist">
+                <a href="#">Home</a>
+                <a href="#">Community</a>
+                <a href="#">Housing</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="#">Services</a>
+                <a href="#">For Sale</a>
+                <a href="#">Forums</a>
+                <a href="#">Gigs</a>
+                <a href="#">Resumes</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <input id="searchbar" required name="text" type="text" placeholder="search">
+        <div id="righttop">
+            <a href="#">Post</a>
+            <a href="#">Account</a>
+        </div>
     </div>
-    <div class="calendar-body">
-      <div class="calendar-row">
-        <div class="calendar-day">Sun</div>
-        <div class="calendar-day">Mon</div>
-        <div class="calendar-day">Tue</div>
-        <div class="calendar-day">Wed</div>
-        <div class="calendar-day">Thu</div>
-        <div class="calendar-day">Fri</div>
-        <div class="calendar-day">Sat</div>
-      </div>
-      <!-- Example content, replace with actual calendar content -->
-      <div class="calendar-row">
-        <div class="calendar-day">-</div>
-        <div class="calendar-day">-</div>
-        <div class="calendar-day">1</div>
-        <div class="calendar-day">2</div>
-        <div class="calendar-day">3</div>
-        <div class="calendar-day">4</div>
-        <div class="calendar-day">5</div>
-      </div>
-      <div class="calendar-row">
-        <div class="calendar-day">6</div>
-        <div class="calendar-day">7</div>
-        <div class="calendar-day">8</div>
-        <div class="calendar-day">9</div>
-        <div class="calendar-day">10</div>
-        <div class="calendar-day">11</div>
-        <div class="calendar-day">12</div>
-      </div>
-      <!-- Add more rows as needed -->
+    <div id="mainbody"> 
+        <p>Welcome to Craigslist!</p>
+        <p>Craigslist is a classified advertisements website with sections devoted to jobs, housing, personals, for sale, items wanted, services, community, gigs, résumés, and discussion forums.</p>
+        <p>Founded in 1995 by Craig Newmark, Craigslist has grown to become one of the most popular websites for classified listings, with millions of users posting and browsing listings every day.</p>
     </div>
-  </div>
-  
-  <script>
-    function changeCity(cityCode) {
-      var cityNameElement = document.getElementById('cityname');
-      switch(cityCode) {
-        case 'chc':
-          cityNameElement.textContent = 'Chicago';
-          break;
-        case 'nch':
-          cityNameElement.textContent = 'North Chicagoland';
-          break;
-        case 'wcl':
-          cityNameElement.textContent = 'West Chicagoland';
-          break;
-        case 'sox':
-          cityNameElement.textContent = 'South Chicagoland';
-          break;
-        case 'nwi':
-          cityNameElement.textContent = 'Northwest Indiana';
-          break;
-        case 'nwc':
-          cityNameElement.textContent = 'Northwest Suburbs';
-          break;
-        default:
-          break;
-      }
-    }
-  </script>
-  </body>
-  </html>
+    <div id="citybar">
+        <div class="citybuttons">
+            <button onclick="changeCity('chc')">CHC</button>
+            <button onclick="changeCity('nch')">NCH</button>
+            <button onclick="changeCity('wcl')">WCL</button>
+            <button onclick="changeCity('sox')">SOX</button>
+            <button onclick="changeCity('nwi')">NWI</button>
+            <button onclick="changeCity('nwc')">NWC</button>
+        </div>
+        <div id="cityname"></div> <!-- This will display the city name -->
+    </div>
+    <div id="bottombar">
+        <p>&copy; 2024 Craigslist | <a href="#">Help</a> <a href="#">Safety</a> <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">About</a>
+            <a href="#">App</a> <a href="#">Sitemap</a></p>
+    </div>
+      
+    <!-- Event Calendar -->
+    <div class="event-calendar">
+        <div class="calendar-header">
+            <h2>April 2024</h2>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-row">
+                <div class="calendar-day">Sun</div>
+                <div class="calendar-day">Mon</div>
+                <div class="calendar-day">Tue</div>
+                <div class="calendar-day">Wed</div>
+                <div class="calendar-day">Thu</div>
+                <div class="calendar-day">Fri</div>
+                <div class="calendar-day">Sat</div>
+            </div>
+            <!-- Example content, replace with actual calendar content -->
+            <div class="calendar-row">
+                <div class="calendar-day">-</div>
+                <div class="calendar-day">-</div>
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day">4</div>
+                <div class="calendar-day">5</div>
+            </div>
+            <div class="calendar-row">
+                <div class="calendar-day">6</div>
+                <div class="calendar-day">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day">12</div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
