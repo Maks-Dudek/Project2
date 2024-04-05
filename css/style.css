@@ -107,14 +107,15 @@ body {
   font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
   width: 80%;
   left: 8%;
+  margin-top: 1%;
 }
 
 #login form fieldset {
   position: relative;
 }
 
-#f1head h1{
-  font-size: 4em;
+#f1head {
+  font-size: 200%;
   font-weight: bold;  
 }
 
@@ -161,18 +162,18 @@ body {
   font-family: "Libre Bodoni", "Garamond", "Times New Roman", serif;
   width: 80%;
   left: 8%;
+  margin-top: 1%;
 }
 
 #signup form fieldset {
   position: relative;
 }
 
-#f2head h1{
-  display: inline-block;
-  font-size: 10em;
+#f2head {
+  font-size: 150%;
   font-weight: bold;  
-  position: relative;
   width: 75%;
+  margin-left: 13%;
  }
 
 #emailcontainer2 {
@@ -200,3 +201,32 @@ body {
   width: 100%;	
 }
 
+@media screen and (min-width: 768px) {
+  
+  #formcontainer {
+    left: 14%;	  
+    width: 70%;
+	margin-top: 1%;
+  }
+  
+   #formcontainer2 {
+    left: 14%;	  
+    width: 70%;
+	margin-top: 1%;
+  }
+
+@media screen and (min-width: 1600px) {
+
+   #formcontainer {
+    left: 24.5%;	  
+    width: 50%;
+	margin-top: 1%;
+  }
+  
+   #formcontainer2 {
+    left: 24.5%;	  
+    width: 50%;
+	margin-top: 1%;
+  }
+  
+}
