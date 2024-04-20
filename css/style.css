@@ -110,24 +110,21 @@ img {
   width: auto;
 }
 
-#logintop {
-  background: rgba(223, 215, 230, .4);
-  border-radius: 30px;
-  width: 50%;
-  height: 20%;
-  position: relative;
-  left: 24.5%;
-  display: flex;
-}
-
 .loginimg {
   flex: 33.33%;
   padding: 5px
 }
 
-.loginimg img {
-  width: 100%;	
+.topimgcontainer {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 5%;
 }
+
+.topimgcontainer img {
+  max-width: 70%;
+  max-height: 70%;
+ }
 
 #formcontainer, #formcontainer2 {
   background: rgba(223, 215, 230, .4);
@@ -268,5 +265,18 @@ img {
   #button2 button {
     width: 20%;
   }
+  
+  #logintop {
+    width: 50%;
+    height: 20%;
+    position: relative;
+    left: 24.5%;
+    display: flex;
+  }
+  
+  .topimgcontainer img {
+    max-width: 100%;
+    max-height: 100%;
+ }
 }
 
