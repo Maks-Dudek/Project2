@@ -261,6 +261,10 @@ img {
   font-weight: bold;
 }
 
+.jobscontainer p {
+  font-size: .8em;
+}
+
 .jobscontainer img {
   max-width: 70%;
   max-height: 70%;  
