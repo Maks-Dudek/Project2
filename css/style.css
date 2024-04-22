@@ -399,7 +399,7 @@ img {
 }
 
 #next {
-  left: 34%em;	
+  left: 70%;	
 }
 
 
@@ -491,6 +491,10 @@ img {
     left: 72%;
     top: 100em;
     margin-top: 8em;
+  }
+}
+#next {
+  left: 73%;	
 }
 
 @media screen and (min-width:1920px) {
@@ -502,8 +506,5 @@ img {
 }
 
 body {
-  font-family: Libre Bodoni, Garamond, Times New Roman, Times
+  font-family: Libre Bodoni, Garamond, Times New Roman, Times;
 }
-
-
-
