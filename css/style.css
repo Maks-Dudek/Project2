@@ -253,6 +253,7 @@ img {
   border: 2px solid #551a8b;
   height: 16em;
   background: rgba(223, 215, 230, .4);
+  position: relative;
 }
 
 .jobscontainer h2 {
@@ -262,127 +263,49 @@ img {
 }
 
 .jobscontainer p {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .jobscontainer img {
-  max-width: 70%;
-  max-height: 70%;  
+  max-width: 60%;
+  max-height: 60%;  
   float: left;
   position: relative;
   top: 2em;
 }
 
 .pay {
-  position: absolute;
-  left: 3.5em;
-  top: 15em;
+  width: 90%;
+  position: relative;
+  left: -8em;
+  top: 1em;
+  text-align: left;
+  
 }
 
 .jobdesc  {
-  width: 55%;
-  position: absolute;
-  left: 40%;
-  top: 4em;
+  width: 90%;
+  position: relative;
+  left: 2em;
+  top: 1em;
   text-align: left;
 }
 
 .location {
-  position: absolute;
-  left: 3.5em;
-  top: 22em;
+  width: 90%;
+  position: relative;
+  left: 1.5em;
+  top: 0em;
+  text-align: left;
 }
 
 .applybutton {
+  position: relative;
   width: 40%;
-  height: 40px;
-  position: absolute;
-  left: 34%;
-  top: 24.8em;
-}
-
-.applybutton2 {
-  width: 40%;
-  height: 40px;
-  position: absolute;
-  left: 34%;
-  top: 44.8em;
-}
-
-.applybutton3 {
-  width: 40%;
-  height: 40px;
-  position: absolute;
-  left: 34%;
-  top: 64.7em;
-}
-
-.applybutton4 {
-  width: 40%;
-  height: 40px;
-  position: absolute;
-  left: 34%;
-  top: 85em;
-}
-
-.pay2 {
-  position: absolute;
-  left: 3.5em;
-  top: 31em;
-}
-
-.jobdesc2  {
-  width: 55%;
-  position: absolute;
-  left: 40%;
-  top: 32em;
-  text-align: left;
-}
-
-.location2 {
-  position: absolute;
-  left: 3.5em;
-  top: 42em;
-}
-
-.pay3 {
-  position: absolute;
-  left: 3.5em;
-  top: 51em;
-}
-
-.jobdesc3  {
-  width: 55%;
-  position: absolute;
-  left: 40%;
-  top: 52em;
-  text-align: left;
-}
-
-.location3 {
-  position: absolute;
-  left: 3.5em;
-  top: 62em;
-}
-
-.pay4 {
-  position: absolute;
-  left: 3.5em;
-  top: 71em;
-}
-
-.jobdesc4  {
-  width: 55%;
-  position: absolute;
-  left: 40%;
-  top: 72em;
-  text-align: left;
-}
-
-.location4 {
-  position: absolute;
-  left: 3.5em;
-  top: 82em;
+  height: 30px;
+  top: 6em;
+  left: -6em;
+  
 }
 
 .bottomnav {
@@ -476,16 +399,16 @@ img {
   }
   
   .jobscontainer p {
-    width: 30%;  
+    width: 80%;  
   }
   
-  .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
+  /*.pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
     left: 16em;
   }
   
   .applybutton, .applybutton2, .applybutton3, .applybutton4 {
     width: 10%;  
-	margin-left: 12%;
+	margin-left: 12%;*/
   }
   
   .bottombutton {
@@ -503,8 +426,8 @@ img {
 
 @media screen and (min-width:1920px) {
 	
-  .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
-    left: 18em;
+ /* .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
+    left: 18em; */
   }
 	
 }
