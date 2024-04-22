@@ -1,5 +1,5 @@
 /* Reset and Normalize */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b,u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -124,8 +124,7 @@ img {
   max-height: 70%
 }
 
-#formcontainer,
-#formcontainer2 {
+#formcontainer, #formcontainer2 {
   background: rgba(223, 215, 230, .4);
   border: none;
   border-radius: 30px;
@@ -136,8 +135,7 @@ img {
   margin-top: 1%
 }
 
-#login form fieldset,
-#signup form fieldset {
+#login form fieldset, #signup form fieldset {
   position: relative
 }
 
@@ -146,17 +144,14 @@ img {
   font-weight: 700
 }
 
-#emailcontainer,
-#emailcontainer2,
-#passwordcontainer {
+#emailcontainer, #emailcontainer2, #passwordcontainer {
   position: relative;
   clear: both;
   margin-top: 5%;
   margin-bottom: 5%
 }
 
-#button2 button,
-#button button {
+#button2 button, #button button {
   font-size: 1em;
   line-height: 1.4em;
   width: 97%;
@@ -177,8 +172,7 @@ img {
   margin-left: 13%
 }
 
-#spacer,
-#spacer2 {
+#spacer, #spacer2 {
   margin-top: 5%;
   margin-bottom: 5%
 }
@@ -201,8 +195,7 @@ img {
   font-family: Arial, sans-serif
 }
 
-#button2 button:hover,
-#button button:hover {
+#button2 button:hover, #button button:hover {
   background-color: #551a8b;
   color: #fff
 }
@@ -230,25 +223,40 @@ img {
 
 @media screen and (min-width:768px) {
 
-  #formcontainer,
-  #formcontainer2 {
+  #formcontainer, #formcontainer2 {
     left: 14%;
     width: 70%;
     margin-top: 1%
   }
+  
+  #button2 button, #button button {
+    width: 20%
+  }
+
+  #logintop {
+    width: 50%;
+    height: 20%;
+    position: relative;
+    left: 24.5%;
+    display: flex
+  }
+
+  .topimgcontainer img {
+    max-width: 100%;
+    max-height: 100%
+  }
+  
 }
 
 @media screen and (min-width:1600px) {
 
-  #formcontainer,
-  #formcontainer2 {
+  #formcontainer, #formcontainer2 {
     left: 32%;
     width: 35%;
     margin-top: 1%
   }
 
-  #button2 button,
-  #button button {
+  #button2 button, #button button {
     width: 20%
   }
 
@@ -280,6 +288,7 @@ body {
 
 .cl-thumb {
   position: absolute;
+  float: left;
   left: 15%;
   height: 100px
 }
@@ -289,8 +298,7 @@ body {
   margin-top: 5px
 }
 
-.supertitle,
-.title-blob {
+.supertitle, .title-blob {
   text-align: left;
   font-weight: 700;
   font-size: 16px;
@@ -335,8 +343,7 @@ body {
   color: #ff0
 }
 
-.favorite-button,
-.search-button {
+.favorite-button, .search-button {
   background-color: #ece3ef;
   border: 1px solid beige;
   border-radius: .2em;
@@ -429,6 +436,7 @@ body {
 }
 
 @media (max-width:668px) and (max-width:992px) {
+  
   .cl-thumb {
     width: 60px;
     height: 60px
@@ -449,8 +457,7 @@ body {
     margin-top: 5px
   }
 
-  .supertitle,
-  .title-blob {
+  .supertitle, .title-blob {
     text-align: left;
     font-weight: 700
   }
@@ -491,8 +498,7 @@ body {
     color: #ff0
   }
 
-  .favorite-button,
-  .reply-button {
+  .favorite-button, .reply-button {
     background-color: #ece3ef;
     padding: 0 .8em;
     height: 30px
@@ -509,8 +515,7 @@ body {
     padding-left: 10%
   }
 
-  .page .leftimg,
-  .page .rightimg {
+  .page .leftimg, .page .rightimg {
     margin-right: 10px
   }
 
