@@ -1,5 +1,5 @@
 /* Reset and Normalize */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b,u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b,u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,14 +7,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-#citybar,
-.navigation {
+body {
+  font-family: Libre Bodoni, Garamond, Times New Roman, Times
+}
+
+#citybar, .navigation {
   background-color: #551a8b;
   overflow: hidden
 }
 
-#citybar button,
-.navigation a {
+#citybar button, .navigation a {
   float: left;
   display: block;
   color: #fff;
@@ -67,8 +69,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-align: left
 }
 
-.dropmenu:hover .dropbutton,
-.navigation a:hover {
+.dropmenu:hover .dropbutton, .navigation a:hover {
   background-color: #916cb2;
   color: #fff
 }
@@ -183,7 +184,7 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center
+  text-align: center;
 }
 
 .event-calendar {
@@ -221,6 +222,193 @@ img {
   border: 1px solid #ccc
 }
 
+/*jobs.html styles*/
+
+.searchcontainer {
+  width: 100%;
+  background: rgba(223, 215, 230, .4);
+  border-radius: 25px;
+}
+
+.searchcontainer h1{
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.searchcontainer input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 1em;
+}
+
+.searchcontainer button {
+  width: 100px;
+  height: 35px;
+}
+
+.jobscontainer {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 25px;
+  border: 2px solid #551a8b;
+  height: 16em;
+  background: rgba(223, 215, 230, .4);
+}
+
+.jobscontainer h2 {
+  font-size: 1.0em;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.jobscontainer img {
+  max-width: 70%;
+  max-height: 70%;  
+  float: left;
+  position: relative;
+  top: 2em;
+}
+
+.pay {
+  position: absolute;
+  left: 3.5em;
+  top: 11em;
+}
+
+.jobdesc  {
+  width: 55%;
+  position: absolute;
+  left: 40%;
+  top: 12em;
+  text-align: left;
+}
+
+.location {
+  position: absolute;
+  left: 3.5em;
+  top: 22em;
+}
+
+.applybutton {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  left: 34%;
+  top: 24.8em;
+}
+
+.applybutton2 {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  left: 34%;
+  top: 44.8em;
+}
+
+.applybutton3 {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  left: 34%;
+  top: 64.7em;
+}
+
+.applybutton4 {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  left: 34%;
+  top: 85em;
+}
+
+.pay2 {
+  position: absolute;
+  left: 3.5em;
+  top: 31em;
+}
+
+.jobdesc2  {
+  width: 55%;
+  position: absolute;
+  left: 40%;
+  top: 32em;
+  text-align: left;
+}
+
+.location2 {
+  position: absolute;
+  left: 3.5em;
+  top: 42em;
+}
+
+.pay3 {
+  position: absolute;
+  left: 3.5em;
+  top: 51em;
+}
+
+.jobdesc3  {
+  width: 55%;
+  position: absolute;
+  left: 40%;
+  top: 52em;
+  text-align: left;
+}
+
+.location3 {
+  position: absolute;
+  left: 3.5em;
+  top: 62em;
+}
+
+.pay4 {
+  position: absolute;
+  left: 3.5em;
+  top: 71em;
+}
+
+.jobdesc4  {
+  width: 55%;
+  position: absolute;
+  left: 40%;
+  top: 72em;
+  text-align: left;
+}
+
+.location4 {
+  position: absolute;
+  left: 3.5em;
+  top: 82em;
+}
+
+.bottomnav {
+  margin-top: 200px;
+}
+
+.bottombutton {
+  width: 20%;
+  height: 40px;
+  position: absolute;
+  left: 70%;
+  top: 100em;
+  margin-top: 5em;
+}
+
+#prev {
+  left: 17%;	
+}
+
+#next {
+  left: 34%em;	
+}
+
+
+/*end jobs.html styles*/
+
+#nextpage {
+  height: 5em;	
+}
+	
 @media screen and (min-width:768px) {
 
   #formcontainer, #formcontainer2 {
@@ -267,260 +455,55 @@ img {
     left: 24.5%;
     display: flex
   }
+  
+  .searchcontainer {
+    width: 50%;
+	margin-left: 25%;
+  }
 
   .topimgcontainer img {
     max-width: 100%;
     max-height: 100%
   }
+  
+  .jobscontainer  {
+	width: 50%;
+	margin-left: 25%;
+  }
+  
+  .jobscontainer p {
+    width: 30%;  
+  }
+  
+  .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
+    left: 16em;
+  }
+  
+  .applybutton, .applybutton2, .applybutton3, .applybutton4 {
+    width: 10%;  
+	margin-left: 12%;
+  }
+  
+  .bottombutton {
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    left: 72%;
+    top: 100em;
+    margin-top: 8em;
+}
+
+@media screen and (min-width:1920px) {
+	
+  .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
+    left: 18em;
+  }
+	
 }
 
 body {
   font-family: Libre Bodoni, Garamond, Times New Roman, Times
 }
 
-.result-node {
-  width: 80%;
-  height: 100px;
-  margin-top: 10px;
-  margin-left: 12%;
-  border: 1px solid #00f
-}
 
-.cl-thumb {
-  position: absolute;
-  float: left;
-  left: 15%;
-  height: 100px
-}
 
-.supertitle {
-  padding-left: 14%;
-  margin-top: 5px
-}
-
-.supertitle, .title-blob {
-  text-align: left;
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 5px
-}
-
-.title-blob {
-  padding-left: 15%
-}
-
-.meta {
-  text-align: left;
-  font-weight: 700;
-  font-size: 18px;
-  display: inline-flex
-}
-
-.actions-combo {
-  display: inline-flex;
-  width: 200px;
-  margin-left: 12%;
-  margin-top: -1%
-}
-
-.reply-button {
-  background-color: #ece3ef;
-  border: 1px solid #b481c9;
-  border-radius: .2em;
-  color: #7b1fa2;
-  font-size: 1.2em;
-  height: 2em;
-  line-height: 1.2em;
-  padding: 0 .8em;
-  margin-right: 2em
-}
-
-.actions-combo .reply-button:hover {
-  background-color: #dcd1d3
-}
-
-.favorite-button {
-  color: #ff0
-}
-
-.favorite-button, .search-button {
-  background-color: #ece3ef;
-  border: 1px solid beige;
-  border-radius: .2em;
-  font-size: 1.2em;
-  height: 2em;
-  line-height: 1.2em;
-  padding: 0 .8em;
-  margin-right: 2em
-}
-
-.search-button {
-  color: #deb887
-}
-
-.actions-combo .favorite-button:hover {
-  background-color: #dcd1d3
-}
-
-.actions-combo .action {
-  transition: width .125s linear;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: .78em;
-  width: 69px;
-  overflow: hidden
-}
-
-.search {
-  width: 100%;
-  margin-bottom: 20px
-}
-
-.search input {
-  margin-left: 5px;
-  width: 500px;
-  height: 50px;
-  flex-grow: 1;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 19.2px;
-  border-radius: 4px;
-  color: #222;
-  background: #fff;
-  border: 1px solid #00f;
-  box-shadow: 0 54px 55px rgba(0, 0, 0, .25), 0 -12px 30px rgba(0, 0, 0, .12), 0 4px 6px rgba(0, 0, 0, .12), 0 12px 13px rgba(0, 0, 0, .17), 0 -3px 5px rgba(0, 0, 0, .09)
-}
-
-.hideimg {
-  float: right
-}
-
-.rule h2 {
-  display: inline;
-  padding-left: 5px
-}
-
-.rule a {
-  border: 1px solid #00f;
-  margin-left: 5px
-}
-
-.page {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px
-}
-
-.page .leftimg {
-  margin-right: 10px;
-  padding-left: 35%
-}
-
-.page .rightimg {
-  margin-right: 110px
-}
-
-.page h2 {
-  margin-right: auto
-}
-
-.page .gopage {
-  margin-right: 10px;
-  padding-right: 30%
-}
-
-.gopage input {
-  height: 40px
-}
-
-@media (max-width:668px) and (max-width:992px) {
-  
-  .cl-thumb {
-    width: 60px;
-    height: 60px
-  }
-
-  .result-node {
-    width: 80%;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: 12%;
-    border: 1px solid #00f
-  }
-
-  .supertitle {
-    padding-left: 25%;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    margin-top: 5px
-  }
-
-  .supertitle, .title-blob {
-    text-align: left;
-    font-weight: 700
-  }
-
-  .title-blob {
-    padding-left: 20%;
-    font-size: 1em;
-    margin-bottom: 15px;
-    word-wrap: break-word
-  }
-
-  .meta {
-    text-align: left;
-    font-weight: 700;
-    font-size: .8em;
-    display: inline-flex
-  }
-
-  .meta span {
-    width: 100%
-  }
-
-  .actions-combo {
-    display: inline-flex;
-    width: 200px;
-    margin-left: 12%;
-    margin-top: 2%
-  }
-
-  .hideimg {
-    width: 20px;
-    height: 20px
-  }
-
-  .favorite-button {
-    border: 1px solid beige;
-    border-radius: .2em;
-    color: #ff0
-  }
-
-  .favorite-button, .reply-button {
-    background-color: #ece3ef;
-    padding: 0 .8em;
-    height: 30px
-  }
-
-  .reply-button {
-    border: 1px solid #b481c9;
-    border-radius: .2em;
-    color: #7b1fa2;
-    margin-right: 2em
-  }
-
-  .page .leftimg {
-    padding-left: 10%
-  }
-
-  .page .leftimg, .page .rightimg {
-    margin-right: 10px
-  }
-
-  .gopage input {
-    margin-top: 32%;
-    width: 120px
-  }
-}
