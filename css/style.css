@@ -263,7 +263,6 @@ img {
 
 .jobscontainer p {
   font-size: .8em;
-  margin-top: 8em;
 }
 
 .jobscontainer img {
@@ -284,7 +283,7 @@ img {
   width: 55%;
   position: absolute;
   left: 40%;
-  top: 12em;
+  top: 20em;
   text-align: left;
 }
 
