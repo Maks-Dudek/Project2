@@ -301,11 +301,10 @@ img {
 
 .applybutton {
   position: relative;
-  width: 40%;
+  width: 100%;
   height: 30px;
   top: 7em;
-  margin-left: 100px;
-  
+  left: 0em;
 }
 
 .bottomnav {
