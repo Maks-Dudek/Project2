@@ -308,6 +308,11 @@ img {
   
 }
 
+.searchcontainer button:hover, .applybutton:hover {
+  background-color: #551a8b;
+  color: #fff
+}
+
 /*end jobs.html styles*/
 
 #nextpage {
@@ -338,6 +343,17 @@ img {
     max-width: 100%;
     max-height: 100%
   }
+  
+  .jobscontainer  {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  
+  .jobscontainer p {
+    width: 80%;  
+  }
+  
+  
   
 }
 
@@ -380,27 +396,45 @@ img {
     width: 80%;  
   }
   
-  /*.pay {
-    left: 16em;
+  .pay {
+  width: 90%;
+  position: relative;
+  left: -8em;
+  top: 1em;
+  text-align: left;
+  
+}
+
+  .jobdesc  {
+    width: 100%;
+    position: relative;
+    left: .5em;
+    top: 1.8em;
+    text-align: left;
   }
-  
-  .jobdesc {
-  
-  }
-  
+
   .location {
-  
+    width: 90%;
+    position: relative;
+    left: -8em;
+    top: 4.5em;
+    text-align: left;
   }
   
-  .applybutton
-    width: 10%;  
-	margin-left: 12%;*/
+  .applybutton {
+    width: 15%;
+    left:  12em;
+    top: 6em;	
   }
-  
+}
+
 @media screen and (min-width:1920px) {
 	
- /* .pay, .pay2, .pay3, .pay4, .location1, .location, .location2, .location3, .location4 {
-    left: 18em; */
+  .location {
+	width: 90%;
+    position: relative;
+    left: -8em;
+    top: 5em;  
   }
 	
 }
