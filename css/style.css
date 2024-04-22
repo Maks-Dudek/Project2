@@ -389,7 +389,7 @@ img {
   
   .nextprev {
     width: 75%;
-	margin-left: 12.5%;
+    margin-left: 12.5%;
   }
   .nextprev button {
     width: 30%;
@@ -475,7 +475,7 @@ img {
   
    .nextprev {
     width: 50%;
-	margin-left: 25%;
+    margin-left: 25%;
   }
   
   .nextprev button {
@@ -484,7 +484,7 @@ img {
 
   .next {
     margin-left: 12em;
-	margin-right: 30em;
+    margin-right: 30em;
   }
 
   .prev {
@@ -500,7 +500,7 @@ img {
 @media screen and (min-width:1920px) {
 	
   .location {
-	width: 90%;
+    width: 90%;
     position: relative;
     left: -8em;
     top: 5em;  
