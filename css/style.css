@@ -308,7 +308,40 @@ img {
   
 }
 
-.searchcontainer button:hover, .applybutton:hover {
+.nextprev {
+  background: rgba(223, 215, 230, .4);
+  border-radius: 25px;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nextprev button {
+  display: inline-block;
+  padding: 8px 16px;
+  width: 50%;
+  height: 75%;
+}
+
+.nextprev p {
+  display: inline-block;	
+  width: 40%;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin-left: 5em;
+}
+
+.prev {
+  background-color: #f1f1f1;
+  color: black;
+  margin-right: 5em;
+}
+
+.searchcontainer button:hover, .applybutton:hover, .nextprev button:hover  {
   background-color: #551a8b;
   color: #fff
 }
