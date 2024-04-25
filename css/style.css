@@ -139,16 +139,16 @@ img {
   position: relative;
   right: 25%;
   width: 45%;
-  bottom: 17.2em;
+  top: -9em;
 }
 
 #founder p {
   position: relative;
   width: 45%;
   left: 52%;
-  top: em;
+  top: 10em;
   font-size: 0.9em;
-  line-height: 1em;
+  line-height: 1.1em;
   text-align: left;
 }
 
