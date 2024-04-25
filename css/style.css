@@ -460,6 +460,22 @@ img {
     display: flex
   }
   
+  #founder {
+    width: 50%; 
+	position: relative;
+	left: 25%;
+  }
+  
+  #founder img {
+    width: 40%;  
+  }
+  
+  #founder p {
+    font-size: 1em;
+    line-height: 1.5em;	
+	top: 15em;
+  }
+  
   .searchcontainer {
     width: 50%;
     margin-left: 25%;
