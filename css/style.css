@@ -125,6 +125,33 @@ img {
   max-height: 70%
 }
 
+.welcometext p{ 
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+#founder { 
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#founder img {
+  position: relative;
+  right: 25%;
+  width: 45%;
+  bottom: 17.2em;
+}
+
+#founder p {
+  position: relative;
+  width: 45%;
+  left: 52%;
+  top: em;
+  font-size: 0.9em;
+  line-height: 1em;
+  text-align: left;
+}
+
 #formcontainer, #formcontainer2 {
   background: rgba(223, 215, 230, .4);
   border: none;
