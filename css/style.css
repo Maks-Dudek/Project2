@@ -393,11 +393,20 @@ img {
   }
 
   #logintop {
-    width: 50%;
+    width: 100%;
     height: 20%;
     position: relative;
-    left: 24.5%;
     display: flex
+  }
+  
+  #logintop img {
+    width: 200%;	  
+  }
+  
+  #founder p {
+    font-size: 1em;
+    line-height: 1.5em;	
+	top: 15em;
   }
 
   .topimgcontainer img {
